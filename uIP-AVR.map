@@ -1,0 +1,930 @@
+Archive member included because of file (symbol)
+
+/usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_mulsi3.o)
+                              servo.o (__mulsi3)
+/usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_divmodsi4.o)
+                              servo.o (__divmodsi4)
+/usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_exit.o)
+                              /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o (exit)
+/usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_copy_data.o)
+                              main.o (__do_copy_data)
+/usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_clear_bss.o)
+                              main.o (__do_clear_bss)
+/usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_udivmodsi4.o)
+                              /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_divmodsi4.o) (__udivmodsi4)
+/usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(atoi.o)
+                              services.o (atoi)
+/usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                              services.o (memcpy_P)
+/usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(strncmp_P.o)
+                              services.o (strncmp_P)
+/usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(memset.o)
+                              uip_arp.o (memset)
+/usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(mul10.o)
+                              /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(atoi.o) (__mulhi_const_10)
+
+Allocating common symbols
+Common symbol       size              file
+
+servo_pos           0x1               servo.o
+mca25_stat          0x1               main.o
+uip_len             0x2               uip.o
+mca25_buf           0x200             mca25.o
+uip_sappdata        0x2               uip.o
+uip_acc32           0x4               uip.o
+uip_flags           0x1               uip.o
+uip_appdata         0x2               uip.o
+uip_conn            0x2               uip.o
+uip_conns           0x69              uip.o
+uip_listenports     0xa               uip.o
+usart_timeout       0x1               main.o
+uip_buf             0x238             uip.o
+uip_slen            0x2               uip.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+LOAD main.o
+LOAD services.o
+LOAD delay.o
+LOAD usart.o
+LOAD mca25.o
+LOAD servo.o
+LOAD rtl8019.o
+LOAD nic.o
+LOAD uip.o
+LOAD uip_arp.o
+LOAD uip_arch.o
+LOAD /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libm.a
+LOAD /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a
+LOAD /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a
+LOAD /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x3d04
+ *(.vectors)
+ .vectors       0x00000000       0x54 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x00000054      0x9b3 services.o
+                0x0000091e                error_404
+                0x00000054                index_html
+ .progmem.data  0x00000a07      0x534 mca25.o
+                0x00000a5e                MCA25_START_JPG_640x480
+                0x00000ab5                MCA25_START_CAPTURING
+                0x00000b36                MCA25_CONFIG_640x480
+                0x00000a73                MCA25_START_JPG_2
+                0x00000a6c                MCA25_START_JPG_160x120
+                0x00000a07                MCA25_START_JPG_1
+                0x00000a65                MCA25_START_JPG_320x240
+                0x00000f3c                . = ALIGN (0x2)
+ *fill*         0x00000f3b        0x1 00
+                0x00000f3c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000f3c        0x0 linker stubs
+ *(.trampolines*)
+                0x00000f3c                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000f3c                __ctors_start = .
+ *(.ctors)
+                0x00000f3c                __ctors_end = .
+                0x00000f3c                __dtors_start = .
+ *(.dtors)
+                0x00000f3c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000f3c        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+                0x00000f3c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000f3c        0xc /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000f48       0x16 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_copy_data.o)
+                0x00000f48                __do_copy_data
+ .init4         0x00000f5e       0x10 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_clear_bss.o)
+                0x00000f5e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000f6e        0x8 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x00000f76        0x4 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+                0x00000f76                __vector_1
+                0x00000f76                __vector_12
+                0x00000f76                __bad_interrupt
+                0x00000f76                __vector_6
+                0x00000f76                __vector_3
+                0x00000f76                __vector_13
+                0x00000f76                __vector_17
+                0x00000f76                __vector_19
+                0x00000f76                __vector_7
+                0x00000f76                __vector_5
+                0x00000f76                __vector_4
+                0x00000f76                __vector_9
+                0x00000f76                __vector_2
+                0x00000f76                __vector_15
+                0x00000f76                __vector_8
+                0x00000f76                __vector_14
+                0x00000f76                __vector_10
+                0x00000f76                __vector_16
+                0x00000f76                __vector_18
+                0x00000f76                __vector_20
+ .text          0x00000f7a      0x172 main.o
+                0x00000f8a                __vector_11
+                0x00000f7a                initTimer
+                0x00000fcc                main
+ .text          0x000010ec      0x5d4 services.o
+                0x000012a8                httpd
+                0x000011a8                services_init
+                0x000011f0                start_pic_trans
+                0x00001114                sendhtml_P
+                0x00001260                sendraw_P
+                0x000010ec                strncmp_PP
+                0x000016a0                services_main
+                0x000011b2                chk4getend
+ .text          0x000016c0       0x2c delay.o
+                0x000016c0                delay_us
+                0x000016d6                delay_ms
+ .text          0x000016ec       0x5e usart.o
+                0x00001736                USART_pstr_P
+                0x000016ec                USART_Init
+                0x00001704                USART_Transmit
+                0x0000170c                USART_Receive
+                0x0000172c                USART_Flush
+ .text          0x0000174a      0x86e mca25.o
+                0x00001c82                mca25_read_at_command
+                0x0000174a                memcmp_P_mca
+                0x000017e6                mca25_send_data_ack
+                0x00001ce2                mca25_init
+                0x000019a4                mca25_read_mux_packet
+                0x00001b4e                mca25_copy_data
+                0x00001cd6                MCA25_Reset
+                0x000017fe                mca25_grab_data
+                0x00001bf4                mca25_configure
+                0x0000179c                mca25_grab_jpeg
+                0x000019fc                mca25_start_image_grab
+                0x0000176c                mca25_pgm_send
+ .text          0x00001fb8       0x50 servo.o
+                0x00001fc4                servo_move
+                0x00001ffa                servo_init
+                0x00001fb8                servo_prepare_pos
+                0x00001ff0                servo_set_pos
+ .text          0x00002008      0x66a rtl8019.o
+                0x00002118                rtl8019RetreivePacketData
+                0x0000252a                rtl8019ProcessInterrupt
+                0x00002490                rtl8019Overrun
+                0x00002106                rtl8019EndPacketSend
+                0x000020cc                rtl8019SendPacketData
+                0x0000253a                rtl8019BeginPacketRetreive
+                0x000021d4                rtl8019EndPacketRetreive
+                0x00002050                rtl8019BeginPacketSend
+                0x00002008                rtl8019Write
+                0x00002206                rtl8019_read_eeprom_word
+                0x000022f8                rtl8019Init
+                0x00002024                rtl8019Read
+                0x0000203a                rtl8019SetupPorts
+ .text          0x00002672       0x9a nic.o
+                0x00002706                nic_init
+                0x000026a8                nic_send
+                0x00002672                nic_poll
+ .text          0x0000270c      0xeb2 uip.o
+                0x0000275e                uip_unlisten
+                0x00002964                uip_process
+                0x00002798                uip_listen
+                0x000027e0                uip_connect
+                0x000027d0                htons
+                0x0000270c                uip_init
+ .text          0x000035be      0x53c uip_arp.o
+                0x00003642                uip_arp_out
+                0x00003942                uip_arp_arpin
+                0x000035be                uip_arp_timer
+                0x00003618                uip_arp_init
+                0x00003a8e                uip_arp_ipin
+ .text          0x00003afa       0xc8 uip_arch.o
+                0x00003afa                uip_add32
+                0x00003b4e                uip_ipchksum
+                0x00003b58                uip_tcpchksum
+                0x00003b1e                uip_chksum
+ .text          0x00003bc2        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_mulsi3.o)
+ .text          0x00003bc2        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_divmodsi4.o)
+ .text          0x00003bc2        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_exit.o)
+ .text          0x00003bc2        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_copy_data.o)
+ .text          0x00003bc2        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_clear_bss.o)
+ .text          0x00003bc2        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x00003bc2        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(atoi.o)
+ .text          0x00003bc2        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .text          0x00003bc2        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(strncmp_P.o)
+ .text          0x00003bc2        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(memset.o)
+ .text          0x00003bc2        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(mul10.o)
+                0x00003bc2                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00003bc2       0x3e /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_mulsi3.o)
+                0x00003bc2                __mulsi3
+ .text.libgcc   0x00003c00       0x36 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_divmodsi4.o)
+                0x00003c00                __divmodsi4
+ .text.libgcc   0x00003c36        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x00003c36        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00003c36        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00003c36       0x44 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_udivmodsi4.o)
+                0x00003c36                __udivmodsi4
+ .text.avr-libc
+                0x00003c7a       0x3c /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(atoi.o)
+                0x00003c7a                atoi
+ .text.avr-libc
+                0x00003cb6       0x12 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                0x00003cb6                memcpy_P
+ .text.avr-libc
+                0x00003cc8       0x1c /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(strncmp_P.o)
+                0x00003cc8                strncmp_P
+ .text.avr-libc
+                0x00003ce4        0xe /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(memset.o)
+                0x00003ce4                memset
+ .text.avr-libc
+                0x00003cf2       0x10 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(mul10.o)
+                0x00003cf2                __mulhi_const_10
+                0x00003d02                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00003d02        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_exit.o)
+                0x00003d02                exit
+                0x00003d02                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00003d02        0x2 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x00003d04                _etext = .
+
+.data           0x00800060       0x14 load address 0x00003d04
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 main.o
+ .data          0x00800060        0x1 services.o
+ .data          0x00800061        0x0 delay.o
+ .data          0x00800061        0x0 usart.o
+ .data          0x00800061        0x0 mca25.o
+ .data          0x00800061        0x0 servo.o
+ .data          0x00800061        0x0 rtl8019.o
+ .data          0x00800061        0x0 nic.o
+ .data          0x00800061        0xc uip.o
+                0x00800069                uip_arp_netmask
+                0x00800061                uip_hostaddr
+                0x00800065                uip_arp_draddr
+ .data          0x0080006d        0x6 uip_arp.o
+                0x0080006d                uip_ethaddr
+ .data          0x00800073        0x0 uip_arch.o
+ .data          0x00800073        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_mulsi3.o)
+ .data          0x00800073        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_divmodsi4.o)
+ .data          0x00800073        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_exit.o)
+ .data          0x00800073        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_copy_data.o)
+ .data          0x00800073        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_clear_bss.o)
+ .data          0x00800073        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x00800073        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(atoi.o)
+ .data          0x00800073        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .data          0x00800073        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(strncmp_P.o)
+ .data          0x00800073        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(memset.o)
+ .data          0x00800073        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(mul10.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800074                . = ALIGN (0x2)
+ *fill*         0x00800073        0x1 00
+                0x00800074                _edata = .
+                0x00800074                PROVIDE (__data_end, .)
+
+.bss            0x00800074      0x530
+                0x00800074                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800074        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800074        0x1 main.o
+ .bss           0x00800075        0x2 services.o
+ .bss           0x00800077        0x0 delay.o
+ .bss           0x00800077        0x0 usart.o
+ .bss           0x00800077        0x0 mca25.o
+ .bss           0x00800077        0x1 servo.o
+                0x00800077                servo_need_update
+ .bss           0x00800078        0x3 rtl8019.o
+ .bss           0x0080007b        0x0 nic.o
+ .bss           0x0080007b        0xc uip.o
+ .bss           0x00800087       0x60 uip_arp.o
+ .bss           0x008000e7        0x0 uip_arch.o
+ .bss           0x008000e7        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_mulsi3.o)
+ .bss           0x008000e7        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_divmodsi4.o)
+ .bss           0x008000e7        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_exit.o)
+ .bss           0x008000e7        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_copy_data.o)
+ .bss           0x008000e7        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x008000e7        0x0 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x008000e7        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(atoi.o)
+ .bss           0x008000e7        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+ .bss           0x008000e7        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(strncmp_P.o)
+ .bss           0x008000e7        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(memset.o)
+ .bss           0x008000e7        0x0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(mul10.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x008000e7        0x2 main.o
+                0x008000e7                mca25_stat
+                0x008000e8                usart_timeout
+ COMMON         0x008000e9      0x200 mca25.o
+                0x008000e9                mca25_buf
+ COMMON         0x008002e9        0x1 servo.o
+                0x008002e9                servo_pos
+ COMMON         0x008002ea      0x2ba uip.o
+                0x008002ea                uip_len
+                0x008002ec                uip_sappdata
+                0x008002ee                uip_acc32
+                0x008002f2                uip_flags
+                0x008002f3                uip_appdata
+                0x008002f5                uip_conn
+                0x008002f7                uip_conns
+                0x00800360                uip_listenports
+                0x0080036a                uip_buf
+                0x008005a2                uip_slen
+                0x008005a4                PROVIDE (__bss_end, .)
+                0x00003d04                __data_load_start = LOADADDR (.data)
+                0x00003d18                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008005a4        0x0
+                0x008005a4                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008005a4                PROVIDE (__noinit_end, .)
+                0x008005a4                _end = .
+                0x008005a4                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000      0xec4
+ *(.stab)
+ .stab          0x00000000      0x6b4 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+ .stab          0x000006b4      0x474 uip_arch.o
+                                0x480 (size before relaxing)
+ .stab          0x00000b28      0x174 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(atoi.o)
+                                0x180 (size before relaxing)
+ .stab          0x00000c9c       0x84 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                                 0x90 (size before relaxing)
+ .stab          0x00000d20       0xc0 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(strncmp_P.o)
+                                 0xcc (size before relaxing)
+ .stab          0x00000de0       0x6c /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(memset.o)
+                                 0x78 (size before relaxing)
+ .stab          0x00000e4c       0x78 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(mul10.o)
+                                 0x84 (size before relaxing)
+
+.stabstr        0x00000000      0x195
+ *(.stabstr)
+ .stabstr       0x00000000      0x195 /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x140
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 main.o
+ .debug_aranges
+                0x00000020       0x20 services.o
+ .debug_aranges
+                0x00000040       0x20 delay.o
+ .debug_aranges
+                0x00000060       0x20 usart.o
+ .debug_aranges
+                0x00000080       0x20 mca25.o
+ .debug_aranges
+                0x000000a0       0x20 servo.o
+ .debug_aranges
+                0x000000c0       0x20 rtl8019.o
+ .debug_aranges
+                0x000000e0       0x20 nic.o
+ .debug_aranges
+                0x00000100       0x20 uip.o
+ .debug_aranges
+                0x00000120       0x20 uip_arp.o
+
+.debug_pubnames
+                0x00000000      0x712
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x5a main.o
+ .debug_pubnames
+                0x0000005a       0xac services.o
+ .debug_pubnames
+                0x00000106       0x2c delay.o
+ .debug_pubnames
+                0x00000132       0x67 usart.o
+ .debug_pubnames
+                0x00000199      0x1cd mca25.o
+ .debug_pubnames
+                0x00000366       0x7c servo.o
+ .debug_pubnames
+                0x000003e2      0x14d rtl8019.o
+ .debug_pubnames
+                0x0000052f       0x39 nic.o
+ .debug_pubnames
+                0x00000568      0x132 uip.o
+ .debug_pubnames
+                0x0000069a       0x78 uip_arp.o
+
+.debug_info     0x00000000     0x3051
+ *(.debug_info)
+ .debug_info    0x00000000      0x37e main.o
+ .debug_info    0x0000037e      0xb0c services.o
+ .debug_info    0x00000e8a       0x9e delay.o
+ .debug_info    0x00000f28      0x1ba usart.o
+ .debug_info    0x000010e2      0xd22 mca25.o
+ .debug_info    0x00001e04      0x113 servo.o
+ .debug_info    0x00001f17      0x3d3 rtl8019.o
+ .debug_info    0x000022ea      0x127 nic.o
+ .debug_info    0x00002411      0x7cd uip.o
+ .debug_info    0x00002bde      0x473 uip_arp.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0xdb3
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x195 main.o
+ .debug_abbrev  0x00000195      0x261 services.o
+ .debug_abbrev  0x000003f6       0x69 delay.o
+ .debug_abbrev  0x0000045f      0x138 usart.o
+ .debug_abbrev  0x00000597      0x1f1 mca25.o
+ .debug_abbrev  0x00000788       0x86 servo.o
+ .debug_abbrev  0x0000080e      0x1a6 rtl8019.o
+ .debug_abbrev  0x000009b4       0xb0 nic.o
+ .debug_abbrev  0x00000a64      0x1d4 uip.o
+ .debug_abbrev  0x00000c38      0x17b uip_arp.o
+
+.debug_line     0x00000000     0x2725
+ *(.debug_line)
+ .debug_line    0x00000000      0x20a main.o
+ .debug_line    0x0000020a      0x531 services.o
+ .debug_line    0x0000073b       0x6c delay.o
+ .debug_line    0x000007a7      0x137 usart.o
+ .debug_line    0x000008de      0x732 mca25.o
+ .debug_line    0x00001010       0xb8 servo.o
+ .debug_line    0x000010c8      0x657 rtl8019.o
+ .debug_line    0x0000171f       0xf3 nic.o
+ .debug_line    0x00001812      0xbb9 uip.o
+ .debug_line    0x000023cb      0x35a uip_arp.o
+
+.debug_frame    0x00000000      0x490
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x40 main.o
+ .debug_frame   0x00000040       0x90 services.o
+ .debug_frame   0x000000d0       0x30 delay.o
+ .debug_frame   0x00000100       0x60 usart.o
+ .debug_frame   0x00000160       0xd0 mca25.o
+ .debug_frame   0x00000230       0x50 servo.o
+ .debug_frame   0x00000280       0xe0 rtl8019.o
+ .debug_frame   0x00000360       0x40 nic.o
+ .debug_frame   0x000003a0       0x80 uip.o
+ .debug_frame   0x00000420       0x70 uip_arp.o
+
+.debug_str      0x00000000      0x9da
+ *(.debug_str)
+ .debug_str     0x00000000      0x19d main.o
+                                0x1f8 (size before relaxing)
+ .debug_str     0x0000019d      0x114 services.o
+                                0x292 (size before relaxing)
+ .debug_str     0x000002b1       0x1a delay.o
+                                 0x96 (size before relaxing)
+ .debug_str     0x000002cb       0x56 usart.o
+                                0x158 (size before relaxing)
+ .debug_str     0x00000321      0x1a2 mca25.o
+                                0x2ef (size before relaxing)
+ .debug_str     0x000004c3       0x5a servo.o
+                                0x134 (size before relaxing)
+ .debug_str     0x0000051d      0x1ac rtl8019.o
+                                0x2a9 (size before relaxing)
+ .debug_str     0x000006c9       0x21 nic.o
+                                0x12f (size before relaxing)
+ .debug_str     0x000006ea      0x20c uip.o
+                                0x3ab (size before relaxing)
+ .debug_str     0x000008f6       0xe4 uip_arp.o
+                                0x28b (size before relaxing)
+
+.debug_loc      0x00000000      0x82f
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x151 services.o
+ .debug_loc     0x00000151       0x18 usart.o
+ .debug_loc     0x00000169      0x263 mca25.o
+ .debug_loc     0x000003cc       0x26 servo.o
+ .debug_loc     0x000003f2      0x207 rtl8019.o
+ .debug_loc     0x000005f9       0x38 nic.o
+ .debug_loc     0x00000631      0x136 uip.o
+ .debug_loc     0x00000767       0xc8 uip_arp.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(uIP-AVR.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0x48
+ .debug_ranges  0x00000000       0x30 services.o
+ .debug_ranges  0x00000030       0x18 mca25.o
+
+Cross Reference Table
+
+Symbol                                            File
+MCA25_CONFIG_640x480                              mca25.o
+MCA25_Reset                                       mca25.o
+MCA25_START_CAPTURING                             mca25.o
+MCA25_START_JPG_1                                 mca25.o
+MCA25_START_JPG_160x120                           mca25.o
+MCA25_START_JPG_2                                 mca25.o
+MCA25_START_JPG_320x240                           mca25.o
+MCA25_START_JPG_640x480                           mca25.o
+USART_Flush                                       usart.o
+                                                  mca25.o
+USART_Init                                        usart.o
+                                                  mca25.o
+                                                  main.o
+USART_Receive                                     usart.o
+                                                  mca25.o
+USART_Transmit                                    usart.o
+                                                  mca25.o
+USART_pstr_P                                      usart.o
+                                                  mca25.o
+__bad_interrupt                                   /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__bss_end                                         /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_copy_data.o)
+__data_start                                      /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_copy_data.o)
+__divmodsi4                                       /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_divmodsi4.o)
+                                                  servo.o
+__do_clear_bss                                    /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_clear_bss.o)
+                                                  uip_arp.o
+                                                  uip.o
+                                                  nic.o
+                                                  rtl8019.o
+                                                  servo.o
+                                                  mca25.o
+                                                  usart.o
+                                                  delay.o
+                                                  services.o
+                                                  main.o
+__do_copy_data                                    /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_copy_data.o)
+                                                  uip_arp.o
+                                                  uip.o
+                                                  nic.o
+                                                  rtl8019.o
+                                                  servo.o
+                                                  mca25.o
+                                                  usart.o
+                                                  delay.o
+                                                  services.o
+                                                  main.o
+__heap_end                                        /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__init                                            /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__mulhi_const_10                                  /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(mul10.o)
+                                                  /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(atoi.o)
+__mulsi3                                          /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_mulsi3.o)
+                                                  servo.o
+__stack                                           /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+                                                  main.o
+__udivmodsi4                                      /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_udivmodsi4.o)
+                                                  /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_divmodsi4.o)
+__vector_1                                        /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_10                                       /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_11                                       main.o
+                                                  /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_12                                       /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_13                                       /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_14                                       /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_15                                       /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_16                                       /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_17                                       /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_18                                       /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_19                                       /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_2                                        /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_20                                       /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_3                                        /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_4                                        /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_5                                        /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_6                                        /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_7                                        /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_8                                        /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_9                                        /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vector_default                                  /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+__vectors                                         /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+_exit                                             /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_exit.o)
+atoi                                              /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(atoi.o)
+                                                  services.o
+chk4getend                                        services.o
+delay_ms                                          delay.o
+                                                  rtl8019.o
+                                                  mca25.o
+delay_us                                          delay.o
+error_404                                         services.o
+exit                                              /usr/local/lib/gcc/avr/4.2.4/avr5/libgcc.a(_exit.o)
+                                                  /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+htons                                             uip.o
+                                                  main.o
+httpd                                             services.o
+index_html                                        services.o
+initTimer                                         main.o
+main                                              main.o
+                                                  /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/crtm32.o
+mca25_buf                                         mca25.o
+                                                  services.o
+mca25_configure                                   mca25.o
+                                                  main.o
+mca25_copy_data                                   mca25.o
+                                                  services.o
+mca25_grab_data                                   mca25.o
+mca25_grab_jpeg                                   mca25.o
+mca25_init                                        mca25.o
+                                                  main.o
+mca25_pgm_send                                    mca25.o
+mca25_read_at_command                             mca25.o
+mca25_read_mux_packet                             mca25.o
+mca25_send_data_ack                               mca25.o
+mca25_start_image_grab                            mca25.o
+mca25_stat                                        mca25.o
+                                                  services.o
+                                                  main.o
+memcmp_P_mca                                      mca25.o
+memcpy_P                                          /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(memcpy_P.o)
+                                                  services.o
+memset                                            /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(memset.o)
+                                                  uip_arp.o
+nic_init                                          nic.o
+                                                  main.o
+nic_poll                                          nic.o
+                                                  main.o
+nic_send                                          nic.o
+                                                  main.o
+rtl8019BeginPacketRetreive                        rtl8019.o
+                                                  nic.o
+rtl8019BeginPacketSend                            rtl8019.o
+                                                  nic.o
+rtl8019EndPacketRetreive                          rtl8019.o
+                                                  nic.o
+rtl8019EndPacketSend                              rtl8019.o
+                                                  nic.o
+rtl8019Init                                       rtl8019.o
+                                                  nic.o
+rtl8019Overrun                                    rtl8019.o
+rtl8019ProcessInterrupt                           rtl8019.o
+rtl8019Read                                       rtl8019.o
+rtl8019RetreivePacketData                         rtl8019.o
+                                                  nic.o
+rtl8019SendPacketData                             rtl8019.o
+                                                  nic.o
+rtl8019SetupPorts                                 rtl8019.o
+rtl8019Write                                      rtl8019.o
+rtl8019_read_eeprom_word                          rtl8019.o
+sendhtml_P                                        services.o
+sendraw_P                                         services.o
+services_init                                     services.o
+                                                  main.o
+services_main                                     services.o
+                                                  uip.o
+servo_init                                        servo.o
+                                                  main.o
+servo_move                                        servo.o
+servo_need_update                                 servo.o
+servo_pos                                         servo.o
+servo_prepare_pos                                 servo.o
+                                                  services.o
+servo_set_pos                                     servo.o
+                                                  services.o
+start_pic_trans                                   services.o
+strncmp_P                                         /usr/local/lib/gcc/avr/4.2.4/../../../../avr/lib/avr5/libc.a(strncmp_P.o)
+                                                  services.o
+strncmp_PP                                        services.o
+uip_acc32                                         uip_arch.o
+                                                  uip.o
+uip_add32                                         uip_arch.o
+                                                  uip.o
+uip_appdata                                       uip_arch.o
+                                                  uip_arp.o
+                                                  uip.o
+                                                  nic.o
+                                                  services.o
+uip_arp_arpin                                     uip_arp.o
+                                                  main.o
+uip_arp_draddr                                    uip.o
+                                                  uip_arp.o
+uip_arp_init                                      uip_arp.o
+                                                  main.o
+uip_arp_ipin                                      uip_arp.o
+                                                  main.o
+uip_arp_netmask                                   uip.o
+                                                  uip_arp.o
+uip_arp_out                                       uip_arp.o
+                                                  main.o
+uip_arp_timer                                     uip_arp.o
+                                                  main.o
+uip_buf                                           uip_arch.o
+                                                  uip_arp.o
+                                                  uip.o
+                                                  nic.o
+                                                  main.o
+uip_chksum                                        uip_arch.o
+uip_conn                                          uip.o
+                                                  services.o
+                                                  main.o
+uip_connect                                       uip.o
+uip_conns                                         uip.o
+                                                  main.o
+uip_ethaddr                                       uip_arp.o
+                                                  rtl8019.o
+uip_flags                                         uip.o
+                                                  services.o
+uip_hostaddr                                      uip.o
+                                                  uip_arp.o
+uip_init                                          uip.o
+                                                  main.o
+uip_ipchksum                                      uip_arch.o
+                                                  uip.o
+uip_len                                           uip_arp.o
+                                                  uip.o
+                                                  nic.o
+                                                  services.o
+                                                  main.o
+uip_listen                                        uip.o
+                                                  services.o
+uip_listenports                                   uip.o
+uip_process                                       uip.o
+                                                  main.o
+uip_sappdata                                      uip.o
+                                                  services.o
+uip_slen                                          uip.o
+                                                  services.o
+uip_tcpchksum                                     uip_arch.o
+                                                  uip.o
+uip_unlisten                                      uip.o
+usart_timeout                                     mca25.o
+                                                  usart.o
+                                                  main.o
